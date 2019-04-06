@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Space Cadets</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+  <h1></h1>
+  <h2>Space Cadets</h2>
+
+  <h2>Submit your date here</h2>
+
+  <form >
+    <input type="text" id="name" name="user_name" placeholder="YYYY-MM-DD">
+    <button type="submit">Submit</button>
+  </form>
+
+  <section>
+    <span><img src="" alt=""></span>
+    <span>Explanation:<h1 id="explanation"></h1></span>
+    <span>Date:<h2 id="date"></h2></span>
+    <span><i class="fas fa-space-shuttle"></i></span>
+
+    <form action="/" method="POST">
+      <input id="target" type="text" value="" name="image">
+      <button type="submit">Submit</button>
+    </form>
+
+  </section>
+  <section>
+    <section>
+      <ul class="finalFrontier">
+        <% for(var i=0; i<messages.length; i++) {%>
+          <li class="message">
+            <img src=" <%= messages[i].image %>" alt="">
+          </li>
+          <% } %>
+        </ul>
+      </section>
+
+    </section>
+    <script src="main.js"></script>
+
+  </body>
+  </html>
